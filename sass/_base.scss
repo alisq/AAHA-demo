@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+html, body {
+     background: $background;
+     color: $foreground;
+    min-height:100vh;
+    background-size:200vw;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    
+}

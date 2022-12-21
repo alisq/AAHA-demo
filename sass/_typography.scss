@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'AAHA-WEB';
+    src: url('../css/fonts/AAHA-Regular.otf') format('opentype');
+    font-weight:normal;
+}
+
+
+body {
+    font-family:freight-text-pro;
+    font-size:18px;
+}
+
+a:link,
+a:visited {
+    color:$foreground;
+    text-decoration:underline;
+}
+
+a:hover,
+a:active {
+    text-decoration:none;
+}
+
+
+.truth a:link,
+.truth a:visited {
+    color:$background;
+}
+
+
+
+h3 {
+    font-family:'Lettera', Courier, monospace;
+    font-weight:normal;
+    font-size:1rem;
+}
+h1, h2 {
+    font-family: 'AAHA-WEB';
+    color:$foreground;
+}
+
+
+.manifesto {
+    font-family: 'AAHA-WEB';
+    text-align:center;
+    font-weight:normal;
+    font-size:5.5vw;
+    line-height:1em;
+    margin:0;
+    padding:0;
+    position:absolute;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+
+    &:hover h2, 
+    &:hover .num{
+        color:rgba($foreground,0.3)
+    }
+    // margin-top:-50%;
+
+
+    h2 {
+        font-weight:normal;
+        display:inline;
+        font-size:inherit;
+        cursor:pointer;
+        transition:color $transition-time;
+
+        &:hover {
+            color:$red;
+
+            & span.num {
+                color:$red;
+            }
+        }
+    }
+    
+}
+
+.num {
+    font-size:0.66em;
+    color:$red;
+    display:inline-block;
+    margin-right:0.33em;
+    margin-top:-1.333em;
+    transform:translateY(-0.5em);
+    font-weight:bold;
+}
