@@ -90,6 +90,48 @@ font-style: italic;
     
 }
 
+/**** BEGIN ALT ****/
+
+.manifesto-2 {
+    font-family: 'AAHA-WEB';
+    text-align:left;
+    font-weight:normal;
+    font-size:5.5vw;
+    line-height:0.9em;
+    margin:0;
+    padding:0;
+    // position:absolute;
+    width:100%;
+    padding:1em;
+
+    &:hover h2, 
+    &:hover .num{
+        color:rgba($foreground,0.3)
+    }
+    // margin-top:-50%;
+
+
+    h2 {
+        margin-left:-0.4em;
+        font-weight:normal;
+        // display:inline;
+        font-size:inherit;
+        line-height:0.9;
+        cursor:pointer;
+        transition:color $transition-time;
+
+        &:hover {
+            color:$red;
+
+            & span.num {
+                color:$red;
+            }
+        }
+    }
+    
+}
+
+
 .num {
     font-size:0.66em;
     color:$red;

@@ -11,8 +11,11 @@ section {
     }
     
 
-
+    &#demands-2 {
+        padding:0;
+    }
 }
+
 
 .title-top,
 .title-bottom {
@@ -32,6 +35,81 @@ section {
 
 .title-bottom {
     bottom:1em;
+}
+
+#mb-2-c,
+#mb-2-l {
+    width:30px;height:30px;
+    cursor: pointer;
+    position:fixed;
+    z-index:12;
+    bottom:2em;
+    right:2em;
+    transform-origin: 50% 50%;
+    transition:all $transition-time;
+
+        &:hover .rect {
+            width:40px;
+            left:0;
+            background:$foreground;
+        }   
+    
+
+    & .rect {
+        background:$red;    
+        height:10px;
+        position:absolute;
+        transition:all $transition-time;
+
+        
+    }
+
+
+}
+
+#mb-2-c {
+
+    & .rect1 {
+        width:30px;
+        top:0;
+        left:5px;
+    }
+
+    & .rect2 {
+        
+        width:20px;
+        top:20px;
+        left:10px;
+    }
+
+    & .rect3 {
+        width:40px;
+        top:40px;
+        left:0;
+    }
+}
+
+
+#mb-2-l {
+
+    & .rect1 {
+        width:30px;
+        top:0;
+        left:0;
+    }
+
+    & .rect2 {
+        
+        width:20px;
+        top:20px;
+        left:0;
+    }
+
+    & .rect3 {
+        width:40px;
+        top:40px;
+        left:0;
+    }
 }
 
 

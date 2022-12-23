@@ -83,6 +83,32 @@ h1, h2 {
       .manifesto h2:hover span.num {
         color: #c00000; }
 
+/**** BEGIN ALT ****/
+.manifesto-2 {
+  font-family: 'AAHA-WEB';
+  text-align: left;
+  font-weight: normal;
+  font-size: 5.5vw;
+  line-height: 0.9em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 1em; }
+  .manifesto-2:hover h2,
+  .manifesto-2:hover .num {
+    color: rgba(60, 60, 60, 0.3); }
+  .manifesto-2 h2 {
+    margin-left: -0.4em;
+    font-weight: normal;
+    font-size: inherit;
+    line-height: 0.9;
+    cursor: pointer;
+    transition: color 0.4s; }
+    .manifesto-2 h2:hover {
+      color: #c00000; }
+      .manifesto-2 h2:hover span.num {
+        color: #c00000; }
+
 .num {
   font-size: 0.66em;
   color: #c00000;
@@ -101,6 +127,8 @@ section {
   section.inverse {
     background: #3C3C3C;
     color: whitesmoke; }
+  section#demands-2 {
+    padding: 0; }
 
 .title-top,
 .title-bottom {
@@ -116,6 +144,59 @@ section {
 
 .title-bottom {
   bottom: 1em; }
+
+#mb-2-c,
+#mb-2-l {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 12;
+  bottom: 2em;
+  right: 2em;
+  transform-origin: 50% 50%;
+  transition: all 0.4s; }
+  #mb-2-c:hover .rect,
+  #mb-2-l:hover .rect {
+    width: 40px;
+    left: 0;
+    background: #3C3C3C; }
+  #mb-2-c .rect,
+  #mb-2-l .rect {
+    background: #c00000;
+    height: 10px;
+    position: absolute;
+    transition: all 0.4s; }
+
+#mb-2-c .rect1 {
+  width: 30px;
+  top: 0;
+  left: 5px; }
+
+#mb-2-c .rect2 {
+  width: 20px;
+  top: 20px;
+  left: 10px; }
+
+#mb-2-c .rect3 {
+  width: 40px;
+  top: 40px;
+  left: 0; }
+
+#mb-2-l .rect1 {
+  width: 30px;
+  top: 0;
+  left: 0; }
+
+#mb-2-l .rect2 {
+  width: 20px;
+  top: 20px;
+  left: 0; }
+
+#mb-2-l .rect3 {
+  width: 40px;
+  top: 40px;
+  left: 0; }
 
 #menu-button {
   width: 30px;

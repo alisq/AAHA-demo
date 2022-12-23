@@ -18,3 +18,11 @@ $("#menu li").click(function(){
 $("h2").click(function(){
     $(document).scrollTo("#example-demand",400)
 })
+
+
+$("#mb-2-c").click(function(){
+  window.location.href = "index.html";
+})
+$("#mb-2-l").click(function(){
+    window.location.href = "index-2.html";
+})
