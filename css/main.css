@@ -13,6 +13,9 @@ html, body {
   overscroll-behavior-y: none;
   overscroll-behavior-x: none; }
 
+img {
+  max-width: 100%; }
+
 @font-face {
   font-family: 'AAHA-WEB';
   src: url("../css/fonts/AAHA-Regular.otf") format("opentype");
@@ -20,7 +23,8 @@ html, body {
 
 body {
   font-family: freight-text-pro;
-  font-size: 18px; }
+  font-size: 21px;
+  line-height: 1.4em; }
 
 a:link,
 a:visited {
@@ -43,6 +47,12 @@ h3 {
 h1, h2 {
   font-family: 'AAHA-WEB';
   color: #3C3C3C; }
+
+.caption {
+  font-size: 0.75em;
+  text-align: right;
+  font-weight: bold;
+  font-style: italic; }
 
 .manifesto {
   font-family: 'AAHA-WEB';
@@ -83,7 +93,8 @@ section {
   background: #F5F5F5;
   width: 100%;
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  padding: 7em 0; }
   section.inverse {
     background: #3C3C3C;
     color: whitesmoke; }
@@ -145,7 +156,8 @@ section {
   left: 0;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.4s; }
+  transition: opacity 0.4s;
+  padding: 0; }
   #menu.active {
     visibility: visible;
     opacity: 1; }
@@ -157,8 +169,9 @@ section {
       font-family: 'AAHA-WEB';
       color: #c00000;
       font-size: 15vh;
+      line-height: 0.8;
       cursor: pointer;
-      transition: background 0.4s; }
+      transition: color 0.4s; }
       #menu ul li:hover {
         color: #3C3C3C; }
 

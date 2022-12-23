@@ -7,9 +7,10 @@ $("#menu-button").click(function(){
 
 $("#menu li").click(function(){
     id= "#"+$(this).attr("id").replace("menu-","");
-    $("#menu").fadeOut(400);
+    $("#menu").css("opacity","0");
     setTimeout(function(){
-        $("#menu").removeClass("active");
+        $("#menu, #menu-button").removeClass("active");
+        $("#menu").attr("style","")
         $(document).scrollTo(id, 400)
     },400)
 });

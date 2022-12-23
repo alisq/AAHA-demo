@@ -3,11 +3,14 @@ section {
     width:100%;
     min-height:100vh;
     position:relative;
+    padding:7em 0;
 
     &.inverse {
         background:$foreground;
         color:rgba($background,1)
     }
+    
+
 
 }
 
@@ -89,7 +92,7 @@ section {
     visibility:hidden;
     opacity:0;
     transition:opacity $transition-time;
-
+    padding:0;
     &.active {
         visibility:visible;
         opacity:1;
@@ -103,8 +106,9 @@ section {
             font-family: 'AAHA-WEB';
             color:$red;
             font-size:15vh;
+            line-height:0.8;
             cursor:pointer;
-            transition:background $transition-time;
+            transition:color $transition-time;
 
             &:hover {
                 color:$foreground;

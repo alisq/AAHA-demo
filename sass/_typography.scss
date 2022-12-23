@@ -7,7 +7,8 @@
 
 body {
     font-family:freight-text-pro;
-    font-size:18px;
+    font-size:21px;
+    line-height:1.4em;
 }
 
 a:link,
@@ -39,6 +40,13 @@ h1, h2 {
     color:$foreground;
 }
 
+
+.caption {
+font-size:0.75em;
+text-align:right;
+font-weight:bold;
+font-style: italic;
+}
 
 .manifesto {
     font-family: 'AAHA-WEB';
