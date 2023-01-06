@@ -18,5 +18,12 @@ html, body {
 }
 
 img {
+    width:100%;
     max-width:100%;
+    filter: grayscale(100%) contrast(125%);
+    transition: filter $transition-time;
+
+    &:hover {
+        filter: grayscale(0%) contrast(100%);
+    }
 }

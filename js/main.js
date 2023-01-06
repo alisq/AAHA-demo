@@ -19,10 +19,13 @@ $("h2").click(function(){
     $(document).scrollTo("#example-demand",400)
 })
 
+$("#lang div").click(function(){
+    $("#lang div").removeClass("active");
+    $(this).addClass("active");
 
-$("#mb-2-c").click(function(){
-  window.location.href = "index.html";
-})
-$("#mb-2-l").click(function(){
-    window.location.href = "index-2.html";
+    $("section").fadeOut(400)
+    setTimeout(function(){
+
+        $("section").fadeIn(400)
+    },400)
 })

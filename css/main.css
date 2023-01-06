@@ -14,11 +14,16 @@ html, body {
   overscroll-behavior-x: none; }
 
 img {
-  max-width: 100%; }
+  width: 100%;
+  max-width: 100%;
+  filter: grayscale(100%) contrast(125%);
+  transition: filter 0.4s; }
+  img:hover {
+    filter: grayscale(0%) contrast(100%); }
 
 @font-face {
   font-family: 'AAHA-WEB';
-  src: url("../css/fonts/AAHA-Regular.otf") format("opentype");
+  src: url("../css/fonts/AAHA-Regular.woff") format("woff");
   font-weight: normal; }
 
 body {
@@ -44,12 +49,22 @@ h3 {
   font-weight: normal;
   font-size: 1rem; }
 
-h1 {
-  font-size: 1.5em; }
-
-h1, h2 {
+h1, h2, h3 {
   font-family: 'AAHA-WEB';
   color: #3C3C3C; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 5.5rem;
+  letter-spacing: 0.02em;
+  line-height: 6rem; }
+
+h3 {
+  font-size: 3rem;
+  letter-spacing: 0.02em;
+  line-height: 6rem; }
 
 .caption {
   font-size: 0.75em;
@@ -61,7 +76,7 @@ h1, h2 {
   font-family: 'AAHA-WEB';
   text-align: center;
   font-weight: normal;
-  font-size: 5.5vw;
+  font-size: 5vw;
   line-height: 1em;
   margin: 0;
   padding: 0;
@@ -123,12 +138,23 @@ section {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding: 7em 0; }
+  padding: 7em 0;
+  border-bottom: 1px solid rgba(192, 0, 0, 0.5); }
   section.inverse {
     background: #3C3C3C;
     color: whitesmoke; }
   section#demands-2 {
     padding: 0; }
+
+p {
+  padding: 0;
+  margin-bottom: 0.5em !important; }
+
+.sticky {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1em; }
 
 .title-top,
 .title-bottom {
@@ -145,9 +171,8 @@ section {
 .title-bottom {
   bottom: 1em; }
 
-#mb-2-c,
-#mb-2-l {
-  width: 30px;
+#lang {
+  width: 80px;
   height: 30px;
   cursor: pointer;
   position: fixed;
@@ -156,17 +181,16 @@ section {
   right: 2em;
   transform-origin: 50% 50%;
   transition: all 0.4s; }
-  #mb-2-c:hover .rect,
-  #mb-2-l:hover .rect {
-    width: 40px;
-    left: 0;
-    background: #3C3C3C; }
-  #mb-2-c .rect,
-  #mb-2-l .rect {
-    background: #c00000;
-    height: 10px;
-    position: absolute;
-    transition: all 0.4s; }
+  #lang div {
+    display: inline-block;
+    border-radius: 2px;
+    transition: all 0.4s;
+    padding: 0.2em 0.3em 0;
+    color: #c00000;
+    font-family: aaha-web; }
+    #lang div:hover, #lang div.active {
+      color: rgba(245, 245, 245, 0.9);
+      background: #c00000; }
 
 #mb-2-c .rect1 {
   width: 30px;
@@ -258,6 +282,29 @@ section {
       transition: color 0.4s; }
       #menu ul li:hover {
         color: #3C3C3C; }
+
+#bottom_fist {
+  fill: #c00000; }
+
+@media (max-width: 800px) {
+  h1 {
+    padding-top: 8rem;
+    padding-left: 3rem; }
+  .title-top,
+  .title-bottom {
+    position: static;
+    display: inline; }
+  .manifesto {
+    font-size: 2em;
+    text-align: left;
+    position: static;
+    transform: translateY(0); }
+    .manifesto br {
+      display: none; }
+    .manifesto h2 {
+      display: block; }
+  section {
+    padding: 1rem; } }
 
 #loud-title {
   font-size: 80vh;

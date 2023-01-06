@@ -4,6 +4,7 @@ section {
     min-height:100vh;
     position:relative;
     padding:7em 0;
+    border-bottom:1px solid rgba($red,0.5);
 
     &.inverse {
         background:$foreground;
@@ -16,6 +17,18 @@ section {
     }
 }
 
+p {
+    padding:0;
+    margin-bottom:0.5em!important;
+}
+
+
+.sticky {
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+}
 
 .title-top,
 .title-bottom {
@@ -37,9 +50,9 @@ section {
     bottom:1em;
 }
 
-#mb-2-c,
-#mb-2-l {
-    width:30px;height:30px;
+#lang {
+
+    width:80px;height:30px;
     cursor: pointer;
     position:fixed;
     z-index:12;
@@ -48,21 +61,36 @@ section {
     transform-origin: 50% 50%;
     transition:all $transition-time;
 
-        &:hover .rect {
-            width:40px;
-            left:0;
-            background:$foreground;
-        }   
+    & div {
+        display:inline-block;
+        border-radius:2px;
+        transition:all $transition-time;
+        padding:0.2em 0.3em 0;
+        color:$red;
+        font-family:aaha-web;
+
+        &:hover,
+        &.active {
+            color:rgba($background,0.9);
+            background:$red;
+        }
+    }
+
+    //     &:hover .rect {
+    //         width:40px;
+    //         left:0;
+    //         background:$foreground;
+    //     }   
     
 
-    & .rect {
-        background:$red;    
-        height:10px;
-        position:absolute;
-        transition:all $transition-time;
+    // & .rect {
+    //     background:$red;    
+    //     height:10px;
+    //     position:absolute;
+    //     transition:all $transition-time;
 
         
-    }
+    // }
 
 
 }
@@ -194,4 +222,42 @@ section {
             
         }
     }
+}
+
+#bottom_fist {
+    fill: $red;
+}
+
+@media (max-width:800px) {
+    h1 {
+        padding-top:8rem;
+        padding-left:3rem;
+    }
+
+    .title-top,
+    .title-bottom {
+        position:static;
+        display:inline;
+    }
+
+    .manifesto {
+        font-size:2em;
+        text-align: left;
+        position:static;
+        
+        
+        transform:translateY(0);
+
+        & br {
+            display:none;
+        }
+
+        & h2 {
+            display:block;
+        }
+    }
+
+section {
+    padding:1rem;
+}
 }
