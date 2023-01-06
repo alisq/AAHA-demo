@@ -1,9 +1,32 @@
-$("#menu-button").click(function(){
+$("#menu-button, #menu-fist").click(function(){
     
-    $(this).toggleClass("active")
+    $("#menu-button, #top_fist").toggleClass("active")
     $("#menu").toggleClass("active")
 })
 
+
+$(document).scroll(function(){
+
+    fromTop = $(document).scrollTop()
+    offset = 10
+
+    fft = $("#contact").position().top-fromTop
+
+    if ((fft-offset) <=$(".title-top").position().top ) {
+        $(".title-top, #menu-button, #menu-fist").addClass("invert")
+    } else {
+        $(".title-top, #menu-button, #menu-fist").removeClass("invert")
+    }
+
+
+    if ((fft-offset) <=$(".title-bottom").position().top ) {
+        $(".title-bottom").addClass("invert")
+    } else {
+        $(".title-bottom").removeClass("invert")
+    }
+
+    
+})
 
 $("#menu li").click(function(){
     id= "#"+$(this).attr("id").replace("menu-","");

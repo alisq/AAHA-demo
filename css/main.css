@@ -40,6 +40,15 @@ a:hover,
 a:active {
   text-decoration: none; }
 
+.inverse a:link,
+.inverse a:visited {
+  color: #F5F5F5;
+  text-decoration: underline; }
+
+.inverse a:hover,
+.inverse a:active {
+  text-decoration: none; }
+
 .truth a:link,
 .truth a:visited {
   color: #F5F5F5; }
@@ -133,6 +142,18 @@ h3 {
   transform: translateY(-0.5em);
   font-weight: bold; }
 
+label,
+.label {
+  font-family: aaha-web, monospace;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  letter-spacing: 0.1em; }
+
+.label li {
+  padding: 0;
+  margin: 0; }
+
 section {
   background: #F5F5F5;
   width: 100%;
@@ -164,6 +185,10 @@ p {
   z-index: 1;
   text-align: center;
   letter-spacing: 0.05em; }
+
+.title-top.invert,
+.title-bottom.invert {
+  color: #F5F5F5 !important; }
 
 .title-top {
   top: 1em; }
@@ -255,6 +280,30 @@ p {
     transform: rotate(45deg); }
   #menu-button.active .menu-button-square {
     background: #3C3C3C; }
+  #menu-button.invert .menu-button-square {
+    background: #F5F5F5; }
+  #menu-button.invert.active .menu-button-square {
+    background: #3C3C3C; }
+
+#menu-fist {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 12;
+  top: 2em;
+  right: 2em; }
+  #menu-fist #top_fist {
+    fill: #c00000;
+    transition: fill 0.4s; }
+    #menu-fist #top_fist.active, #menu-fist #top_fist:hover {
+      fill: #3C3C3C; }
+  #menu-fist.active .menu-button-square {
+    background: #3C3C3C; }
+  #menu-fist.invert #top_fist {
+    fill: #F5F5F5; }
+  #menu-fist.invert.active #menu-fist.invert #top_fist {
+    fill: #3C3C3C; }
 
 #menu {
   position: fixed;
@@ -283,8 +332,20 @@ p {
       #menu ul li:hover {
         color: #3C3C3C; }
 
+.socials {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.5em; }
+  .socials i {
+    cursor: pointer;
+    transition: color 0.4s; }
+    .socials i:hover {
+      color: #c00000; }
+
 #bottom_fist {
-  fill: #c00000; }
+  display: inline-block;
+  fill: #eeeed7;
+  max-width: 200px; }
 
 @media (max-width: 800px) {
   h1 {

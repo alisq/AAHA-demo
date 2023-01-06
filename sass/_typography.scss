@@ -23,6 +23,18 @@ a:active {
 }
 
 
+.inverse a:link,
+.inverse a:visited {
+    color:$background;
+    text-decoration:underline;
+}
+
+.inverse a:hover,
+.inverse a:active {
+    text-decoration:none;
+}
+
+
 .truth a:link,
 .truth a:visited {
     color:$background;
@@ -158,4 +170,20 @@ font-style: italic;
     margin-top:-1.333em;
     transform:translateY(-0.5em);
     font-weight:bold;
+}
+
+
+label,
+.label {
+    font-family:aaha-web, monospace;
+    text-transform:uppercase;
+    display:inline;
+    font-size:0.8em;
+    letter-spacing:0.1em;
+    
+}
+
+.label li {
+    padding:0;
+    margin:0;
 }

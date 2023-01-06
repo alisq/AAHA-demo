@@ -41,6 +41,11 @@ p {
     letter-spacing: 0.05em;;
 }
 
+.title-top.invert,
+.title-bottom.invert {
+    color:$background!important;
+}
+
 
 .title-top {
     top:1em;
@@ -187,6 +192,56 @@ p {
         
     background:$foreground;
   }
+
+&.invert  {
+    & .menu-button-square {
+        background:$background;
+
+    }
+
+    &.active .menu-button-square { 
+        background:$foreground;
+    }
+}
+
+}
+
+
+
+#menu-fist {
+    width:30px;height:30px;
+    cursor: pointer;
+    position:fixed;
+    z-index:12;
+    top:2em;
+    right:2em;
+
+    & #top_fist {
+        fill:$red;
+        transition: fill $transition-time;
+
+        &.active,
+        &:hover {
+            fill:$foreground;
+        }
+    }
+ 
+
+&.active .menu-button-square {
+        
+    background:$foreground;
+  }
+
+  &.invert  {
+    & #top_fist {
+        fill:$background;
+
+    }
+
+    &.active & #top_fist { 
+        fill:$foreground;
+    }
+}
 }
 
 #menu {
@@ -224,8 +279,27 @@ p {
     }
 }
 
+.socials {
+    font-size:2em;
+    letter-spacing: 0.1em;
+    padding-bottom:0.5em;
+
+    & i {
+        cursor:pointer;
+        transition: color $transition-time;
+
+    
+    
+        &:hover {
+        color:$red;
+    }
+    }
+}
+
 #bottom_fist {
-    fill: $red;
+    display:inline-block;
+    fill: $white;
+    max-width:200px;
 }
 
 @media (max-width:800px) {
@@ -239,6 +313,9 @@ p {
         position:static;
         display:inline;
     }
+
+
+  
 
     .manifesto {
         font-size:2em;
