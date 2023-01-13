@@ -30,16 +30,42 @@ p {
     top: 1em;
 }
 
-.title-top,
-.title-bottom {
+
+h1 {
+    pointer-events: none;;
     position:fixed;
+    top:0; left:0;
+    width:100vw;
+    height:100vh;
+    z-index:1;
+    transition:transform $transition-time;
+
+    &.fr {
+        transform:rotate(180deg);
+    }
+
+    & .title-top,
+    & .title-bottom {
+    position:absolute;
     color:$red;
-    width:100%;
-    
+    width:100%;    
     z-index:1;
     text-align:center;
     letter-spacing: 0.05em;;
+    }
+
+    & .title-top {
+        top:1em;
+    }
+    
+    & .title-bottom {
+        transform:rotate(180deg);
+        bottom:1em;
+    }
 }
+
+
+
 
 .title-top.invert,
 .title-bottom.invert {
@@ -47,13 +73,7 @@ p {
 }
 
 
-.title-top {
-    top:1em;
-}
 
-.title-bottom {
-    bottom:1em;
-}
 
 #lang {
 
@@ -151,8 +171,8 @@ p {
     cursor: pointer;
     position:fixed;
     z-index:12;
-    top:2em;
-    left:2em;
+    top:1em;
+    left:1em;
     transform-origin: 50% 50%;
 
 
@@ -213,18 +233,41 @@ p {
     cursor: pointer;
     position:fixed;
     z-index:12;
-    top:2em;
-    right:2em;
+    padding:0;
+    margin:0;
+    line-height: 0;
+    top:2rem;
+    right:2rem;
+    font-size:4em;
+    font-family: "AAHA-WEB";
 
     & #top_fist {
         fill:$red;
         transition: fill $transition-time;
-
-        &.active,
+        
         &:hover {
-            fill:$foreground;
+             fill:$foreground;        
         }
     }
+
+
+    &.active {
+
+        &::after {
+            position:relative;
+            top:-0.2em;
+            content:"\d7";
+            
+        }
+
+        & #top_fist {
+            opacity:0;            
+        }
+    }
+
+   
+
+    
  
 
 &.active .menu-button-square {

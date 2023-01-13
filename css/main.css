@@ -23,7 +23,7 @@ img {
 
 @font-face {
   font-family: 'AAHA-WEB';
-  src: url("../css/fonts/AAHA-Regular.woff") format("woff");
+  src: url("../css/fonts/AAHA-Regular.woff2") format("woff");
   font-weight: normal; }
 
 body {
@@ -52,6 +52,9 @@ a:active {
 .truth a:link,
 .truth a:visited {
   color: #F5F5F5; }
+
+.red {
+  color: #c00000; }
 
 h3 {
   font-family: 'Lettera', Courier, monospace;
@@ -134,13 +137,9 @@ h3 {
         color: #c00000; }
 
 .num {
-  font-size: 0.66em;
   color: #c00000;
   display: inline-block;
-  margin-right: 0.33em;
-  margin-top: -1.333em;
-  transform: translateY(-0.5em);
-  font-weight: bold; }
+  margin-right: 0.1em; }
 
 label,
 .label {
@@ -177,24 +176,34 @@ p {
   position: sticky;
   top: 1em; }
 
-.title-top,
-.title-bottom {
+h1 {
+  pointer-events: none;
   position: fixed;
-  color: #c00000;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
-  text-align: center;
-  letter-spacing: 0.05em; }
+  transition: transform 0.4s; }
+  h1.fr {
+    transform: rotate(180deg); }
+  h1 .title-top,
+  h1 .title-bottom {
+    position: absolute;
+    color: #c00000;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    letter-spacing: 0.05em; }
+  h1 .title-top {
+    top: 1em; }
+  h1 .title-bottom {
+    transform: rotate(180deg);
+    bottom: 1em; }
 
 .title-top.invert,
 .title-bottom.invert {
   color: #F5F5F5 !important; }
-
-.title-top {
-  top: 1em; }
-
-.title-bottom {
-  bottom: 1em; }
 
 #lang {
   width: 80px;
@@ -253,8 +262,8 @@ p {
   cursor: pointer;
   position: fixed;
   z-index: 12;
-  top: 2em;
-  left: 2em;
+  top: 1em;
+  left: 1em;
   transform-origin: 50% 50%; }
   #menu-button .menu-button-square {
     background: #c00000;
@@ -291,13 +300,24 @@ p {
   cursor: pointer;
   position: fixed;
   z-index: 12;
-  top: 2em;
-  right: 2em; }
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4em;
+  font-family: "AAHA-WEB"; }
   #menu-fist #top_fist {
     fill: #c00000;
     transition: fill 0.4s; }
-    #menu-fist #top_fist.active, #menu-fist #top_fist:hover {
+    #menu-fist #top_fist:hover {
       fill: #3C3C3C; }
+  #menu-fist.active::after {
+    position: relative;
+    top: -0.2em;
+    content: "\d7"; }
+  #menu-fist.active #top_fist {
+    opacity: 0; }
   #menu-fist.active .menu-button-square {
     background: #3C3C3C; }
   #menu-fist.invert #top_fist {

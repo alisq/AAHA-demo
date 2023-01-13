@@ -1,6 +1,6 @@
 $("#menu-button, #menu-fist").click(function(){
     
-    $("#menu-button, #top_fist").toggleClass("active")
+    $("#menu-button, #menu-fist").toggleClass("active")
     $("#menu").toggleClass("active")
 })
 
@@ -45,6 +45,8 @@ $("h2").click(function(){
 $("#lang div").click(function(){
     $("#lang div").removeClass("active");
     $(this).addClass("active");
+
+    $("h1").toggleClass("fr")
 
     $("section").fadeOut(400)
     setTimeout(function(){
