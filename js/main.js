@@ -1,7 +1,11 @@
-$("#menu-button, #menu-fist").click(function(){
+$("#menu-button").click(function(){
     
-    $("#menu-button, #menu-fist").toggleClass("active")
-    $("#menu").toggleClass("active")
+    $("#menu-button, #menu").toggleClass("active")
+})
+
+$("#menu-fist").click(function(){
+    
+    $(document).scrollTo(0, 400)
 })
 
 
@@ -9,6 +13,12 @@ $(document).scroll(function(){
 
     fromTop = $(document).scrollTop()
     offset = 10
+
+    if (fromTop > 100) {
+        $("#menu-fist").fadeIn(400)
+    } else {
+        $("#menu-fist").fadeOut(400)
+    }
 
     fft = $("#contact").position().top-fromTop
 
