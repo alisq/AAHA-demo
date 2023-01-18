@@ -346,16 +346,65 @@ h1 {
 }
 
 @media (max-width:800px) {
-    h1 {
-        padding-top:8rem;
-        padding-left:3rem;
+
+    #menu-button {
+        top:0.5em;
+        left:0.5em;
     }
 
-    .title-top,
-    .title-bottom {
-        position:static;
-        display:inline;
+    #menu-fist {
+        top:0.8rem;
+        right:0.5rem;
     }
+
+    .manifesto {
+        & .num {
+            width:0.2em;
+            text-align:right
+        }
+        & h2 {
+
+            padding:0 0 0 0.2em;
+            margin:0;
+            line-height:1.3em;
+            text-indent:-0.2em;
+        }
+    }
+    h1 {
+        position:static;
+        height:auto;
+        max-width:80%;
+        margin:auto;
+        margin-top:0.25em;
+        
+
+        & .title-top,
+        & .title-bottom {
+            position:static;
+            display:block;
+        }
+
+        & .title-bottom {
+            transform: rotate(0);
+            display:none;
+        }
+
+        &.fr {
+            transform:rotate(0);
+            
+            & .title-bottom {
+                display:block;
+            }
+
+            & .title-top {
+                display:none;
+            }
+        }
+
+      
+    } 
+
+
 
 
   
@@ -379,5 +428,21 @@ h1 {
 
 section {
     padding:1rem;
+}
+
+.container {
+    width:100%;
+}
+
+section.demand {
+    padding-top:3em
+}
+.sticky {
+    position:static;
+}
+
+
+#menu ul li {
+    font-size:6rem
 }
 }

@@ -370,13 +370,39 @@ h1 {
   max-width: 200px; }
 
 @media (max-width: 800px) {
+  #menu-button {
+    top: 0.5em;
+    left: 0.5em; }
+  #menu-fist {
+    top: 0.8rem;
+    right: 0.5rem; }
+  .manifesto .num {
+    width: 0.2em;
+    text-align: right; }
+  .manifesto h2 {
+    padding: 0 0 0 0.2em;
+    margin: 0;
+    line-height: 1.3em;
+    text-indent: -0.2em; }
   h1 {
-    padding-top: 8rem;
-    padding-left: 3rem; }
-  .title-top,
-  .title-bottom {
     position: static;
-    display: inline; }
+    height: auto;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 0.25em; }
+    h1 .title-top,
+    h1 .title-bottom {
+      position: static;
+      display: block; }
+    h1 .title-bottom {
+      transform: rotate(0);
+      display: none; }
+    h1.fr {
+      transform: rotate(0); }
+      h1.fr .title-bottom {
+        display: block; }
+      h1.fr .title-top {
+        display: none; }
   .manifesto {
     font-size: 2em;
     text-align: left;
@@ -387,7 +413,15 @@ h1 {
     .manifesto h2 {
       display: block; }
   section {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .container {
+    width: 100%; }
+  section.demand {
+    padding-top: 3em; }
+  .sticky {
+    position: static; }
+  #menu ul li {
+    font-size: 6rem; } }
 
 #loud-title {
   font-size: 80vh;
