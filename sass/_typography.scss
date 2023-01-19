@@ -11,6 +11,16 @@ body {
     line-height:1.4em;
 }
 
+::-moz-selection { /* Code for Firefox */
+    background: $red;
+    color: $background;
+  }
+  
+  ::selection {
+    background: $red;
+    color: $background;
+  }
+
 a:link,
 a:visited {
     color:$red;

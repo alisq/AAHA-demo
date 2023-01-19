@@ -31,6 +31,15 @@ body {
   font-size: 21px;
   line-height: 1.4em; }
 
+::-moz-selection {
+  /* Code for Firefox */
+  background: #c00000;
+  color: #F5F5F5; }
+
+::selection {
+  background: #c00000;
+  color: #F5F5F5; }
+
 a:link,
 a:visited {
   color: #c00000;
@@ -413,7 +422,7 @@ h1 {
     #table--actions tr:first-child td {
       border-top: 1px solid #3C3C3C; }
     #table--actions tr:nth-child(odd) {
-      background: rgba(60, 60, 60, 0.1); }
+      background: rgba(192, 0, 0, 0.1); }
     #table--actions tr td {
       margin: 0;
       padding: 0.5em;
