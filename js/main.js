@@ -39,7 +39,7 @@ $(document).scroll(function(){
 })
 
 $("#menu li").click(function(){
-    id= "#"+$(this).attr("id").replace("menu-","");
+    id= "#"+$(this).data("item");
     $("#menu").css("opacity","0");
     setTimeout(function(){
         $("#menu, #menu-button").removeClass("active");
@@ -48,8 +48,18 @@ $("#menu li").click(function(){
     },400)
 });
 
+$(".f").click(function(){
+    
+    $(".hide").removeClass("hide");
+    f = $(this).data("filter")
+    $(".action").not(f).addClass("hide");
+
+    
+})
+
 $("h2").click(function(){
-    $(document).scrollTo("#example-demand",400)
+    d = "#"+$(this).data("demand")
+    $(document).scrollTo(d,400)
 })
 
 $("#lang div").click(function(){

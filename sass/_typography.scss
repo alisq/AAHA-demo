@@ -13,7 +13,7 @@ body {
 
 a:link,
 a:visited {
-    color:$foreground;
+    color:$red;
     text-decoration:underline;
 }
 
@@ -57,6 +57,10 @@ h1, h2, h3 {
     color:$foreground;
 }
 
+h4 {
+    font-size:1em;
+    font-weight:bold;
+}
 
 
 h1 {
@@ -84,6 +88,28 @@ text-align:right;
 font-weight:bold;
 font-style: italic;
 }
+
+button {
+    background:$red;
+    color:$background;
+    border:1px solid $red;
+    border-radius: 30px;
+}
+
+button:active,
+button:hover,
+button:visited {
+    color:$background;
+    color:$red;
+    background:$background;
+    border:1px solid $red;
+    border-radius: 30px;
+}
+
+.small {
+    font-size:0.75em;
+    font-weight:bold;
+    }
 
 .manifesto {
     font-family: 'AAHA-WEB';

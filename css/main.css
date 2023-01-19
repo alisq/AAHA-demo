@@ -33,7 +33,7 @@ body {
 
 a:link,
 a:visited {
-  color: #3C3C3C;
+  color: #c00000;
   text-decoration: underline; }
 
 a:hover,
@@ -67,6 +67,10 @@ h1, h2, h3 {
   font-family: 'AAHA-WEB';
   color: #3C3C3C; }
 
+h4 {
+  font-size: 1em;
+  font-weight: bold; }
+
 h1 {
   font-size: 3rem; }
 
@@ -85,6 +89,25 @@ h3 {
   text-align: right;
   font-weight: bold;
   font-style: italic; }
+
+button {
+  background: #c00000;
+  color: #F5F5F5;
+  border: 1px solid #c00000;
+  border-radius: 30px; }
+
+button:active,
+button:hover,
+button:visited {
+  color: #F5F5F5;
+  color: #c00000;
+  background: #F5F5F5;
+  border: 1px solid #c00000;
+  border-radius: 30px; }
+
+.small {
+  font-size: 0.75em;
+  font-weight: bold; }
 
 .manifesto {
   font-family: 'AAHA-WEB';
@@ -213,8 +236,8 @@ h1 {
   cursor: pointer;
   position: fixed;
   z-index: 12;
-  bottom: 2em;
-  right: 2em;
+  bottom: 1em;
+  right: 1em;
   transform-origin: 50% 50%;
   transition: all 0.4s; }
   #lang div {
@@ -368,6 +391,33 @@ h1 {
   display: inline-block;
   fill: #eeeed7;
   max-width: 200px; }
+
+#table--actions {
+  width: 100%;
+  border-spacing: 0; }
+  #table--actions tr {
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+    transition: height 0.4s;
+    height: 100px;
+    overflow: hidden; }
+    #table--actions tr:hover {
+      background: #3C3C3C !important;
+      color: #F5F5F5; }
+      #table--actions tr:hover h3 {
+        color: #F5F5F5; }
+    #table--actions tr.hide {
+      height: 0;
+      visibility: collapse; }
+    #table--actions tr:first-child td {
+      border-top: 1px solid #3C3C3C; }
+    #table--actions tr:nth-child(odd) {
+      background: rgba(60, 60, 60, 0.1); }
+    #table--actions tr td {
+      margin: 0;
+      padding: 0.5em;
+      border-bottom: 1px solid #3C3C3C; }
 
 @media (max-width: 800px) {
   #menu-button {

@@ -81,8 +81,8 @@ h1 {
     cursor: pointer;
     position:fixed;
     z-index:12;
-    bottom:2em;
-    right:2em;
+    bottom:1em;
+    right:1em;
     transform-origin: 50% 50%;
     transition:all $transition-time;
 
@@ -343,6 +343,44 @@ h1 {
     display:inline-block;
     fill: $white;
     max-width:200px;
+}
+
+#table--actions {
+    width:100%;
+    border-spacing:0;
+    & tr {
+        padding:0;
+        margin:0;
+        visibility:visible;
+        transition:height $transition-time;
+        height:100px;
+        overflow:hidden;
+
+        &:hover {
+            background:$foreground!important;
+            color:$background;
+
+            & h3 {
+                color:$background
+            }
+        }
+
+        &.hide {
+            height:0;
+            
+            visibility: collapse;
+        }
+
+        &:first-child td {border-top:1px solid $foreground;}
+        &:nth-child(odd) {background: rgba($foreground,0.1)}
+        // background:red;
+
+        & td {
+            margin:0;
+            padding:0.5em;
+            border-bottom:1px solid $foreground;
+        }
+    }
 }
 
 @media (max-width:800px) {
