@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://use.typekit.net/xux7shp.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@2/fullscreen.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -136,31 +138,39 @@ Levitt Goodman Associates
                         <li>this is a list item</li>
                         <li>this is a another list item</li>
                     </ul>
+                    
 
+                        <div class="main-carousel">
+                            <div class="carousel-cell"><img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/Collage.jpg?itok=XJQdcKlu"></div>
+                            <div class="carousel-cell"><img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/Posters-4-donotpublish.jpg?itok=zn-QtyRp"></div>
+                            <div class="carousel-cell"><img src="https://server-aaha.codepanel.in/web/sites/default/files/2022-12/06_2_Sonam%20Yangzom_1.jpeg?itok=Gd-no6Y0"></div>
+                        </div>
                     </div>
                     <div class="three columns">
                         <h3 class="sticky">TAKE ACTION</h3>
 
                         <p>
-                        Learn more about the campaign to for a gentrification tax in Toronto by visiting <label>this page.</label> <em>(This would be concrete and online activities for getting involved directly in an individual demand...)</em>
+                        Learn more about the campaign to for a gentrification tax 
+                        in Toronto by visiting <label>this page.</label>
                         </p>
                         <p>
                         <label>PAY THE VOLUNTARY TAX</label>
                         </p>
 
                         <p>
-                            Learn more about the campaign to for a gentrification tax in Toronto by visiting <label>this page.</label> <em>(This would be concrete and online activities for getting involved directly in an individual demand...)</em>
+                            Advocate for taxing the unearned incremenet at city hall by signing the petition below:</em>
                             </p>
                             <p>
-                            <label>PAY THE VOLUNTARY TAX</label>
+                            <label>Sign the petition</label>
                             </p>
 
+                            
 
                             <p>
-                                Learn more about the campaign to for a gentrification tax in Toronto by visiting <label>this page.</label> <em>(This would be concrete and online activities for getting involved directly in an individual demand...)</em>
+                               Attend one of the forthcoming Parkdale Community Information Sessions hosted by PNLT
                                 </p>
                                 <p>
-                                <label>PAY THE VOLUNTARY TAX</label>
+                                <label>RSVP FOR AN INFORMATION SESSION</label>
                                 </p>
 
                                 <p>
@@ -304,14 +314,49 @@ Levitt Goodman Associates
                 </div>
             </div>    
         </section>
+        <section id="collective">
+            <div class="container">
+                
+                <button data-filter=".region--toronto">Mission</button>
+                <button data-filter=".region--montreal">Members</button>                
+            </div>
+
+            <table>
+                <tr class="action region--toronto">
+                    <td><label>Toronto</label></td>
+                    <td><label>The Unearned Increment</label></td>
+                    <td><h3>Pay the voluntary tax</h3></td>
+                    <td><p class="small">Additional text description would go here.</p></td>
+                    <td>01.23.2023—07.23.2023</td>
+                </tr>     <tr><td>Adrian Blackwell</td></tr>
+                <tr><td>David T Fortin</td></tr>
+                <tr><td>Matthew Soules</td></tr>
+                <tr><td>Sara Stevens</td></tr>
+                <tr><td>Patrick Steward</td></tr>
+                <tr><td>Tijana Vujosevic</td></tr>
+                <tr><td>Chris Lee</td></tr>
+                    <tr><td>Ali Qadeer</td></tr>
+            </table>
+
+
+       
+        </section>
         <section id="take-action">
             
+            
+
                 <div class="container">
                     <h2>Take Action</h2>
                     <button class="f" data-filter=".region--toronto">toronto</button>
                     <button class="f" data-filter=".region--montreal">montréal</button>
                     <button class="f" data-filter=".action">all</button>
-                </div>
+                    <br />
+                    <button>sign</button 
+                        <button>join</button>
+                        <button>donate</button>
+                        <button>participate</button>
+                        <button>follow</button>
+                    </div>
                 <table id="table--actions">
                     <tr class="action region--toronto">
                         <td><label>Toronto</label></td>
@@ -413,8 +458,11 @@ Levitt Goodman Associates
         
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js" integrity="sha512-PsJ1f4lw0Jrga4wbDOvdWs9DFl88C1vlcH2VQYqgljHBmzmqtGivUkzRHWx2ZxFlnysKUcROqLeuOpYh9q4YNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="js/main.js" async defer></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- <script src="/js/fullscreen.js"></script>  -->
+        <script src="js/main.js"></script>
 
     </body>
 </html>

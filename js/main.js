@@ -73,4 +73,14 @@ $("#lang div").click(function(){
 
         $("section").fadeIn(400)
     },400)
-})
+});
+
+setTimeout(function(){
+$('.main-carousel').flickity({
+    // options
+    // fullscreen: true,
+    cellAlign: 'left',
+    contain: true
+  });
+
+},12600)
