@@ -87,7 +87,7 @@ h2 {
 h3 {
     font-size:3rem;
     letter-spacing: 0.02em;
-    line-height:6rem;
+    line-height:4rem;
 }
 
 
@@ -118,6 +118,7 @@ button:visited {
 
 .small {
     font-size:0.75em;
+    line-height:1.3em;
     font-weight:bold;
     }
 
@@ -217,8 +218,9 @@ label,
 .label {
     font-family:aaha-web, monospace;
     text-transform:uppercase;
-    display:inline;
+    display:inline-block;
     font-size:0.8em;
+    line-height:1.2em;
     letter-spacing:0.1em;
     
 }
@@ -226,4 +228,11 @@ label,
 .label li {
     padding:0;
     margin:0;
+}
+
+.label--red {
+    background:$red;
+    color:$white;
+    padding:0.25em 0.75em 0.05em;
+    border-radius:1em;
 }

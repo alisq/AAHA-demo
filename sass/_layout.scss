@@ -346,7 +346,16 @@ h1 {
     max-width:200px;
 }
 
-#table--actions {
+ul.actions {
+    list-style-type:none;
+    padding-top:1em;
+    & li {
+        margin-bottom:1em;
+        padding-bottom:1em;
+    }
+}
+
+.table--listing {
     width:100%;
     border-spacing:0;
     & tr {

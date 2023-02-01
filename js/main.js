@@ -83,4 +83,4 @@ $('.main-carousel').flickity({
     contain: true
   });
 
-},12600)
+    },12600)
