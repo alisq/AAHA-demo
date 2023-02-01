@@ -554,3 +554,7 @@ ul.actions {
   padding: 1em; }
   #switches:hover {
     opacity: 1; }
+
+@media (max-width: 800px) {
+  #switches {
+    display: none; } }
