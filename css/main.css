@@ -540,3 +540,17 @@ ul.actions {
   width: auto;
   bottom: 0;
   right: 0; }
+
+#switches {
+  opacity: 0.1;
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  background: #c00000;
+  color: #eeeed7;
+  width: 200px;
+  height: 300px;
+  z-index: 1000;
+  padding: 1em; }
+  #switches:hover {
+    opacity: 1; }

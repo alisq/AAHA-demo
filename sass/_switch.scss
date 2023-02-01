@@ -1,0 +1,16 @@
+#switches {
+    opacity:0.1;
+    position:fixed;
+    top:2em;
+    right:2em;
+    background:$red;
+    color:$white;
+    width:200px;
+    height:300px;
+    z-index: 1000;
+    padding:1em;
+
+    &:hover {
+        opacity:1;
+    }
+}  

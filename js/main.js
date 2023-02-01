@@ -62,6 +62,18 @@ $("h2").click(function(){
     $(document).scrollTo(d,400)
 })
 
+
+   
+    $('#demand-case').change(function() {
+        if(this.checked) {
+            $(".manifesto").css("text-transform","uppercase");
+        } else {
+            $(".manifesto").attr("style","");
+        }
+        
+    });
+
+
 $("#lang div").click(function(){
     $("#lang div").removeClass("active");
     $(this).addClass("active");
