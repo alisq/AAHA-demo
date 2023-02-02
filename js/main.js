@@ -66,7 +66,10 @@ $("h2").click(function(){
    
     $('#demand-case').change(function() {
         if(this.checked) {
-            $(".manifesto").css("text-transform","uppercase");
+            $(".manifesto").css({
+                "text-transform":"uppercase",
+                "font-size":"4.5vw"
+            });
         } else {
             $(".manifesto").attr("style","");
         }
