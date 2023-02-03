@@ -85,6 +85,18 @@ $("h2").click(function(){
         
     });
 
+    $('#demand-case2').change(function() {
+        if(this.checked) {
+            $(".manifesto").css({
+                "text-transform":"capitalize",
+                //"font-size":"4.5vw"
+            });
+        } else {
+            $(".manifesto").attr("style","");
+        }
+        
+    });
+
 
 $("#lang div").click(function(){
     $("#lang div").removeClass("active");
