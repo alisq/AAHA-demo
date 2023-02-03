@@ -23,7 +23,8 @@ body {
 
 a:link,
 a:visited {
-    color:$red;
+    color:inherit;
+    text-decoration-color: $red!important;
     text-decoration:underline;
 }
 

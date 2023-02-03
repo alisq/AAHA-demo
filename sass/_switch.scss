@@ -15,7 +15,17 @@
     }
 }  
 
+.one-col-title {
+    position:sticky;
+    top:5rem; left:1rem;
+    padding-top:2rem;
+    width:20vw;
+    height:0;
+    // height:0;
+}
+
 @media (max-width:800px) {
     #switches { display:none; }
 
 }
+

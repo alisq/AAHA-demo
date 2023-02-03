@@ -42,7 +42,8 @@ body {
 
 a:link,
 a:visited {
-  color: #c00000;
+  color: inherit;
+  text-decoration-color: #c00000 !important;
   text-decoration: underline; }
 
 a:hover,
@@ -554,6 +555,14 @@ ul.actions {
   padding: 1em; }
   #switches:hover {
     opacity: 1; }
+
+.one-col-title {
+  position: sticky;
+  top: 5rem;
+  left: 1rem;
+  padding-top: 2rem;
+  width: 20vw;
+  height: 0; }
 
 @media (max-width: 800px) {
   #switches {

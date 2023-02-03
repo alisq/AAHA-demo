@@ -63,6 +63,15 @@ $("h2").click(function(){
 })
 
 
+//THIS IS ALL STUFF FOR THE SWITCH DELETE WHEN THE TIME IS RIGHT
+
+    $("#one-col").click(function(){
+        $(document).scrollTo("#the-unearned-increment2", 600)
+    })
+
+    $("#three-col").click(function(){
+        $(document).scrollTo("#the-unearned-increment", 600)
+    })
    
     $('#demand-case').change(function() {
         if(this.checked) {

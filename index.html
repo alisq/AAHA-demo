@@ -20,7 +20,9 @@
     <body>
 
         <div id="switches">
-            <input type="checkbox" id="demand-case">change case
+            <input type="checkbox" id="demand-case"> <label for="deman-case">change case</label><br />
+            <label id="one-col">see one column</label><br />
+            <label id="three-col">see three column</label>
         </div>
 
         <div id="menu-button">
@@ -668,9 +670,12 @@ Levitt Goodman Associates
                         <div class="nine columns">Action is at the core of the AAHA Campaign. It is one thing to envision a more equitable housing future for all, but visions mean nothing without change. Action begins with building awareness about how architects, advocates, and activists can come together to propose innovative ways to reconfigure our built environment to empower people against housing discrimination and injustice. In advance of the campaign launch in Venice, AAHA will host a series of academic and community round tables to expand our reach through our networks. An energetic social media campaign will weave itself into the global community and we will work with our activists to seek the best ways to mobilize support for the demands through in-person events. Our website will support visitors to join the AAHA movement and directly participate—by signing petitions, sending letters to local representatives, joining aligned organizations, donating, and showing up at events and rallies. 
                         </div>
                     </div>
-
+                    <button class="f" data-filter=".region--vancouver">vancouver</button>
+                    <button class="f" data-filter=".region--northern">northern</button>
+                    <button class="f" data-filter=".region--praries">praries</button>
                     <button class="f" data-filter=".region--toronto">toronto</button>
                     <button class="f" data-filter=".region--montreal">montréal</button>
+                    <button class="f" data-filter=".region--atlantic">atlantic</button>
                     <button class="f" data-filter=".action">all</button>
                     <br />
                     <button>sign</button>
@@ -678,6 +683,7 @@ Levitt Goodman Associates
                         <button>donate</button>
                         <button>participate</button>
                         <button>follow</button>
+                        <button class="f" data-filter=".action">all</button>
                     </div>
                 <table class=".table--listing">
                     <tr class="action region--toronto">
@@ -774,12 +780,13 @@ Levitt Goodman Associates
 
         <!--DEMO OF ONE COLUMN-->
 
-        <section id="the-unearned-increment" class="demand">
+        <section id="the-unearned-increment2" class="demand">
+            <h2 class="one-col-title">The Unearned Increment</h2>
             <div class="container">
                 <div class="row">
                     <div class="two columns">.</div>
                     <div class="eight columns">
-                        <h2>The Unearned Increment</h2>
+                        
 
 
                         <p>
@@ -809,28 +816,28 @@ Levitt Goodman Associates
                     
 
               
-                        <h3 class="sticky">TAKE ACTION</h3>
+                        <h3 class="sticky" style="margin-top: 1.5em;padding: 0;">TAKE ACTION</h3>
 
-                        <ul class="actions">
+                        <ul class="actions" style="padding-top:0;">
                             <li>
                                 <label class="label--red">donate</label><br />
                                 Learn more about the campaign to for a gentrification tax 
                                 in Toronto by visiting <label>this page.</label>
                                 <br/>
-                                <label>PAY THE VOLUNTARY TAX</label>
+                                <label><a href="http://google.com">PAY THE VOLUNTARY TAX</a></label>
                             </li>
 
                             <li>
                                 <label class="label--red">Sign</label><br />
                                 Advocate for taxing the unearned incremenet at city hall by signing the petition below:</em>
                                 <br/>
-                                <label>Sign here</label>
+                                <label><a href="http://google.com">Sign here</a></label>
                             </li>
 
                         <li>
                              <label class="label--red">participate</label><br />
                                Attend one of the forthcoming Parkdale Community Information Sessions hosted by PNLT
-                                <label>RSVP FOR AN INFORMATION SESSION</label>
+                                <label><a href="http://google.com">RSVP FOR AN INFORMATION SESSION</a></label>
                         </li>
                     </ul>
 
