@@ -111,7 +111,7 @@ $("#lang div").click(function(){
     },400)
 });
 
-setTimeout(function(){
+//setTimeout(function(){
 $('.main-carousel').flickity({
     // options
     // fullscreen: true,
@@ -119,4 +119,4 @@ $('.main-carousel').flickity({
     contain: true
   });
 
-    },12600)
+    //},12600)
