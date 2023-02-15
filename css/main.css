@@ -73,7 +73,7 @@ h3 {
   padding: 0;
   margin: 0; }
 
-h1, h2, h3 {
+h1, h2, h3, h5 {
   font-family: 'AAHA-WEB';
   color: #3C3C3C; }
 
@@ -93,6 +93,13 @@ h3 {
   font-size: 3rem;
   letter-spacing: 0.02em;
   line-height: 4rem; }
+
+h5 {
+  font-size: 2.5rem;
+  letter-spacing: 0.02em;
+  line-height: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0; }
 
 .caption {
   font-size: 0.75em;
