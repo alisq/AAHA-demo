@@ -100,6 +100,18 @@ h5 {
     margin-bottom:0;
 }
 
+.exAlt1:before {
+    content:'\0777';
+}
+
+.exAlt2:before {
+    content:'\0776';
+}
+
+.exAlt3:before {
+    content:'\0778';
+}
+
 
 .caption {
 font-size:0.75em;

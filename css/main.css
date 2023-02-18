@@ -101,6 +101,15 @@ h5 {
   padding-bottom: 0;
   margin-bottom: 0; }
 
+.exAlt1:before {
+  content: '\0777'; }
+
+.exAlt2:before {
+  content: '\0776'; }
+
+.exAlt3:before {
+  content: '\0778'; }
+
 .caption {
   font-size: 0.75em;
   text-align: right;
@@ -228,6 +237,14 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 1em; }
+
+.sticky-demo {
+  position: fixed;
+  bottom: 1rem;
+  background: #c00000;
+  color: #F5F5F5;
+  padding: 0.25em 1em;
+  font-family: 'AAHA'; }
 
 h1 {
   pointer-events: none;

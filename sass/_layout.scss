@@ -34,6 +34,17 @@ p {
     top: 1em;
 }
 
+.sticky-demo {
+    position: fixed;
+    bottom: 1rem;
+    background:$red;
+    color:$background;
+    padding:0.25em 1em;
+    font-family: 'AAHA';
+    
+}
+
+
 //white-bg
 
 

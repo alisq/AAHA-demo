@@ -111,6 +111,11 @@ $("#lang div").click(function(){
     },400)
 });
 
+$(".sticky-demo").click(function(){
+    targ = "#"+$(this).parent().parent().parent().attr("id")+" .action-bar";
+    $(document).scrollTo(targ, 400);
+})
+
 //setTimeout(function(){
 $('.main-carousel').flickity({
     // options
